@@ -1,0 +1,39 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "<br/>",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.2.8"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@google/generative-ai": "^0.6.0",
+    "@react-oauth/google": "^0.12.1",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
+    "leaflet": "^1.9.4",
+    "multiselect-react-dropdown": "^2.0.25",
+    "node-fetch": "^3.3.2",
+    "react": "^18.2.0",
+    "react-datepicker": "^6.7.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^6.22.3",
+    "react-slick": "^0.30.2",
+    "reactstrap": "^9.2.2",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.8"
+  }
+}

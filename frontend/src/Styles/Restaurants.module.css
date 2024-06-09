@@ -1,0 +1,208 @@
+
+
+.mainimage {
+  margin-top: 5%;
+  width: 100%;
+  max-width: 100vw; /* Ensure the image does not exceed the viewport width */
+  height: 80vh; /* Set the height to 80vh or adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow to prevent scrolling */
+  box-sizing: border-box;
+}
+
+.mainimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius:10px ;
+  margin: 5 5%; /* Add margin on both sides */
+}
+.hotelsearchContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.search {
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.locDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchFormGroup {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+.searchIcon {
+  background-color: #144c52;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.searchIcon:hover {
+  background-color: #0d3338;
+}
+
+.filterButton {
+  background-color: #144c52;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filterButton:hover {
+  background-color: #0d3338;
+}
+
+.searchFormGroup {
+  margin: 10px;
+  width: 100%;
+  
+}
+.hotelsrecomline{
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #144c52;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 1%;
+  word-wrap: break-word;
+}
+.hotelsrecomlinetwo{
+  position: relative;
+  text-align: center;
+  color:#009f9d;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: -2%;
+  word-wrap: break-word;
+}
+
+/* Result Container Styles */
+.resultContainer {
+  padding: 20px;
+}
+
+.loading {
+  text-align: center;
+}
+
+.restaurantItem {
+  margin-bottom: 20px;
+}
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .search {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
+
+/* Footer Styles */
+/* footer {
+  background-color: #144c52;
+  color: white;
+  padding: 20px;
+  text-align: center;
+} */
+
+.locDate{
+  display: flex;
+  /* flex-wrap: wrap; */
+  
+}
+ 
+.cardMainContainer {
+  width: 100%; /* Set card width to 100% */
+  height: 400px; /* Set a fixed height for the card */
+  border: 1px solid #e0e0e0; /* Add a light border */
+  border-radius: 8px; /* Add border radius */
+  overflow: hidden; /* Hide overflow content */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  background-color: #ffffff; /* Set background color */
+  transition: transform 0.3s ease; /* Add smooth transition on hover */
+}
+
+.cardMainContainer:hover {
+  transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+.card-img-top {
+  width: 75px; /* Ensure images fill the entire card width */
+  height: 200px; /* Set a fixed height for images */
+  object-fit: cover; /* Maintain aspect ratio and cover the space */
+}
+
+.cardBody {
+  padding: 20px; /* Add padding inside the card body */
+}
+
+.cardTitle {
+  font-size: 20px; /* Increase title font size */
+  font-weight: bold; /* Add bold font weight to title */
+  margin-bottom: 10px; /* Add space below title */
+  color: #333333; /* Set title color */
+}
+
+.cardText {
+  font-size: 15px; /* Increase text font size */
+  color: #3a3a3a; /* Set text color */
+  line-height: 1.5; /* Set line height for better readability */
+}
+
+/* Additional styles for card details */
+.restaurantImage {
+  margin-bottom: 5px; /* Add space below the image */
+  width: 100%; /* Ensure images fill the entire card width */
+  height: 185px; /* Set a fixed height for images */
+  object-fit: cover; /* Maintain aspect ratio and cover the space */
+}
+
+

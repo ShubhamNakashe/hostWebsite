@@ -1,0 +1,65 @@
+.alertContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+.alertBox {
+  position: relative;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px; /* Curved edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Border shadow */
+  text-align: center; /* Center text */
+}
+
+.alertMessage {
+  font-size: 18px;
+  font-weight: bold; /* Bold letters */
+  margin-bottom: 20px;
+  padding: 0 10px; /* Add padding to the text */
+}
+
+.alertButton {
+  background-color: #007bff; /* Change button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px; /* Add margin to top to separate from message */
+}
+
+.alertButton:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.cancelButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #666; /* Slightly darker grey */
+  border: none;
+  font-size: 24px; /* Make the cross symbol bigger */
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
+}
+
+.cancelButton:hover {
+  color: #444; /* Slightly darker on hover */
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}

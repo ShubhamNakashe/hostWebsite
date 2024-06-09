@@ -1,0 +1,38 @@
+.reviewContainer {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .reviewCardContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .reviewcard {
+    background-color: rgb(216, 236, 253);
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 0.5rem;
+    min-width: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviewcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .reviewcard hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* responsive section */
+  
+  @media screen and (max-width: 768px) {
+    .reviewcard {
+      min-width: 100%;
+    }
+  }

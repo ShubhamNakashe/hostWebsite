@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 1rem 2.2rem;
+  /* font-family: Inter, system-ui, Avenir, Georgia, serif;; */
+
+  font-family:  system-ui, Georgia, serif;
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+  background-color: aliceblue;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0.3rem;
+  background-color: #009f9d;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    margin: 0rem 0rem;
+    width: 100vw;
+  }
+}

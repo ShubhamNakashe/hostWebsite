@@ -1,0 +1,414 @@
+
+
+body {
+  margin: 0; /* Reset the default margin to ensure the content is not offset */
+  padding: 0; /* Reset the default padding */
+}
+
+.maincontainer {
+  margin-top: 90px;
+}
+
+.Travel-Plan {
+  font-family: Arial, sans-serif;
+  margin: 200px;
+}
+
+.loader {
+  margin-left: 500px;
+  text-align: center;
+}
+
+.loader h2 {
+  font-family: Arial, sans-serif;
+}
+
+.loader img {
+  width: 80px;
+  height: 80px;
+}
+
+.plan-details {
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.plan-details p {
+  font-size: 20px;
+  font-family: Georgia, serif;
+  color: #555;
+  line-height: 1.5;
+  margin-left: 200px;
+}
+/* generatedplan.css */
+
+/* Highlight specific words in the generated plan */
+.dayheader {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333; /* You can change the color as per your preference */
+  margin-bottom: 10px;
+}
+
+.planitem {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.morning-highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+.allbuttons {
+  width: 60%;
+  margin-top: 7%;
+  font-style: bold;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pdfButton,
+.bookmarksdisplayButton,
+.displayButton {
+  background-color: #144c52;
+  border: none;
+  color: white;
+  border-radius: 20px 20px 20px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  /* padding: 20px; */
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+}
+
+.pdfButton:hover,
+.bookmarksdisplayButton:hover,
+.displayButton:hover {
+  background-color: #144c52;
+  border: none;
+  color: white;
+  border-radius: 20px 20px 20px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  /* padding: 10px; */
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5);
+}
+
+.Navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.6rem 2rem;
+  z-index: 1000;
+  box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.335);
+}
+
+.NavLogo {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #009f9d;
+}
+
+.NavLogo span {
+  color: #144c52;
+}
+
+.active {
+  color: #009f9d !important;
+}
+
+.Navbar ul {
+  display: flex;
+  gap: 1.5rem;
+  text-transform: uppercase;
+}
+
+.Navbar ul li {
+  font-size: 0.9rem;
+  list-style: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+.Navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.Navbar ul li a:hover {
+  color: #009f9d;
+}
+
+.NavBtn {
+  margin-right: 4rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  border: 1px solid white;
+  background-color: white;
+  color: #009f9d;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Added transition */
+  font-size: 1.5vw;
+  font-style: bold;
+  font-family: "Merriweather";
+  text-transform: uppercase;
+  box-shadow: 2px 2px 2px 1px rgba(110, 48, 0, 0.16);
+}
+
+.NavBtn:hover {
+  border: 0px solid #009f9d;
+  background-color: #009f9d;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+}
+
+.menuIcon {
+  font-size: 1.5rem;
+}
+
+.travelTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; 
+
+}
+
+.travelTable th,
+.travelTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background-color:  rgb(216, 236, 253);
+
+}
+
+.travelTable .dayHeader {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.travelTable .morning-highlight {
+  color: #0066cc;
+  font-weight: bold;
+}
+/* BookmarkedItineraries.module.css */
+
+.mainContainer {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bookmarkedItineraries {
+  margin-top: 20px;
+}
+
+.bookmarkedItineraries h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #144c52;
+}
+
+.bookmarkedItineraries table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.bookmarkedItineraries th, .bookmarkedItineraries td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.bookmarkedItineraries th {
+  background-color: #f2f2f2;
+  color: #144c52;
+}
+
+.bookmarkedItineraries tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.bookmarkedItineraries tr:hover {
+  background-color: #f1f1f1;
+}
+
+.bookmarkedItineraries a {
+  color: #144c52;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bookmarkedItineraries a:hover {
+  text-decoration: underline;
+}
+
+.bookmarkedItineraries button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.bookmarkedItineraries button:hover {
+  background-color: #113d44;
+}
+
+
+/*this is for navbar delete this later*/
+
+/* responsive section */
+
+@media screen and (max-width: 450px) {
+  .Navbar {
+    padding: 0.6rem 0rem;
+  }
+
+  .brand {
+    width: 100vw;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .Navbar ul {
+    flex-direction: column;
+    position: fixed;
+    top: 7%;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .open {
+    opacity: 1 !important;
+    display: flex !important;
+  }
+
+  .NavBtn {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Navbar ul {
+    top: 6%;
+  }
+
+  .NavLogo {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
+
+/* Update the styles for the travel table */
+.travelTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 50px 50px 50px 50px ; /* Add border-radius for curved corners */
+  overflow: hidden; /* Hide content that goes beyond the curved corners */
+  
+}
+
+.travelTable th,
+.travelTable td {
+  padding: 8px;
+  border: 1px solid  rgb(216, 236, 253);
+  
+}
+
+.travelTable .dayHeader {
+
+  background-color:white;
+  border: 0px solid white;
+  font-weight:800;
+  /* margin-left: 50%; */
+  text-align: center; /* Center the text horizontally */
+  vertical-align: middle; /* Center the text vertically */
+  height: 80px;
+  font-size: 1.3rem;
+}
+
+.travelTable .daysched {
+  background-color: #2f789c;
+  font-weight: bold;
+  
+}
+
+.travelTable .safetyHeader {
+
+  background-color:white;
+  border: 0px solid white;
+  font-weight:800;
+  margin-left: 50%;
+  /* text-align: center; 
+  vertical-align: middle;  */
+  height: 80px;
+  font-size: 1.3rem;
+}
+
+/* Apply styles to rows based on their content */
+.travelTable tbody tr:has(td:empty) {
+  /* Style rows with empty second column */
+  background-color: #f9f9f9; 
+}
+
+.travelTable tbody tr:has(td:not(:empty):not(.dayHeader):not(.safetyHeader)) {
+  /* Style rows with non-empty second column that are not headers */
+  background-color: #a8f6ff; 
+}
+
+/* Highlight text */
+.travelTable tbody tr td .morninghighlight,
+.travelTable tbody tr td .afternoon-highlight,
+.travelTable tbody tr td .evening-highlight {
+  color: rgb(0, 75, 80); /* You can adjust this color */
+  font-weight: bold;
+  text-align: center; /* Center the text horizontally */
+  vertical-align: middle; 
+}
+.travelTable tbody tr td .dayHeader .timeOfDay {
+  color: rgb(0, 75, 80); /* You can adjust this color */
+  font-weight: bold;
+
+}
+.itinerarydescription{
+  /* color: rgb(0, 75, 80);  */
+
+  /* font-weight: bold; */
+  font-size: 1.1rem;
+  text-align: center; /* Center the text horizontally */
+  vertical-align: middle; 
+}
+.highlightword {
+  font-size: 1rem;
+  font-weight: bold;
+  color:  rgb(0, 75, 80); /* Change the color as needed */
+}

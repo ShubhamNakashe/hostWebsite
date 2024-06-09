@@ -1,0 +1,256 @@
+.testimonialBox p {
+  text-align: center;
+  font-size: 24px;
+
+}
+
+.testimonials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-top: 4%;
+}
+
+.boxContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 3rem 0;
+}
+
+.testimonialBox {
+  background-color: rgb(216, 236, 253);
+  padding: 2.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  /* padding-left: 100px; */
+max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+  align-items: center;
+  /* position: relative; */
+}
+
+.testimonialBox:hover {
+  transform: translateX(0.5rem) translateY(-0.9rem);
+  box-shadow: rgb(0, 0, 0, 0.3) 0px 10px 10px 0px;
+}
+
+
+.testimonialBox img {
+  width: 14%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.Icon {
+  position: absolute;
+  top: -9%;
+  left: 4%;
+  font-size: 2rem;
+  color: #144c52;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.info h3 {
+  font-size: 1rem;
+}
+
+.info span {
+  font-size: 0.9rem;
+  color: rgb(84, 84, 84);
+}
+ .search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the search bar horizontally */
+  margin-top: 1.5rem; /* Add top margin for spacing */
+}
+
+.searchinput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem; /* Add bottom margin for spacing */
+}
+
+.searchbuttonweather {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #064248; /* Change color to #064248 */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.searchbuttonweather:hover {
+  background-color: #0f3a3f;
+}
+
+.temp-container {
+  text-align: center;
+}
+
+
+.tempContainer {
+  background-color: rgb(216, 236, 253);
+  padding: 2.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out; /* Center the container */
+  width: 100%;
+  max-width: 50%; /* Adjust the maximum width as needed */
+  display: flex;
+  flex-direction: column;
+  
+  margin: 2%;
+  justify-content: space-around;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.temp,
+.mintemp,
+.maxtemp,
+.humidity,
+.weatherInfo,
+.weathInfo {
+  background-color: #f0f8ff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
+  width: 100%;
+  max-width: 35%;
+  margin: 2%;
+}
+.minmax{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+
+
+
+.weather,
+.clouds {
+  /* color: #4682b4; */
+  color:#064248;
+  font-weight: bold; 
+}
+
+
+.tempContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dataContainer {
+  display: flex;
+  overflow-x: auto; 
+  padding-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin: 2%;
+  background-color: #f0f8ff;
+  /* padding: 1.5rem; */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  /* margin: 0 auto; 
+  max-width: 600px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px;
+  max-width: 100%;
+}
+.temptablebox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+.element {
+  padding: 20px;
+  display: flex; 
+  flex-direction: row; 
+  margin-right: 20px; 
+  background-color: rgb(216, 236, 253);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.day {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.data {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-right: 20px; /* Add margin between data boxes */
+  width: 300px; /* Keep the size of the boxes the same */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.datetime,
+.tableweather,
+.tabletemperature,
+.tablehumidity,
+.tablefeelslike,
+.tablemintemp,
+.tablemaxtemp,
+.tableclouds {
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font:18px bold black;
+  
+}
+
+.tableclouds {
+  padding-bottom: 20px;
+}
+
+.datetime {
+  font: 24px bold black;
+}
+
+
+/* responsive section */
+
+@media screen and (max-width: 450px) {
+  .testimonials {
+    padding: 0 1rem;
+  }
+
+  .boxContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,262 @@
+.hotelContainer{
+  box-sizing: border-box;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  
+}
+
+.Navbar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.6rem 2rem;
+  z-index: 1000;
+  box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.335);
+}
+
+
+.menuIcon {
+  font-size: 1.5rem;
+}
+
+.mainimage {
+  margin-top: 5%;
+  width: 100%;
+  max-width: 100vw; /* Ensure the image does not exceed the viewport width */
+  height: 80vh; /* Set the height to 80vh or adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow to prevent scrolling */
+  box-sizing: border-box;
+}
+
+.mainimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius:10px ;
+  margin: 5 5%; /* Add margin on both sides */
+}
+
+
+.hotelsearchContainer {
+  position: absolute;
+  width: 90%;
+  height:auto;
+  border-radius: 10px;
+  background-color: white;
+
+}
+
+.search {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: '#1E1E1E';
+  font-size: 20px;
+  font-weight: 700;
+  word-wrap: 'break-word';
+  padding: 2%;
+}
+
+.search input {
+  flex-grow: 1;
+  /* margin-right: 10px; */
+  border: none;
+  border-bottom: 1px solid #999;
+  box-shadow: 0 1px 0 0 grey;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  color: #1E1E1E;
+}
+
+.search button {
+  
+  width: 8%; /* Make the button take the full width on smaller screens */
+  /* Add space between input and button on smaller screens */
+  background: #144c52;
+  color: white;
+  border: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 8px; /* Adjust padding as needed */
+}
+
+
+.search input::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+.search input:focus {
+  border-bottom: 2px solid #009f9d;
+  box-shadow: 0 2px 0 0 #009f9d;
+}
+
+.hotelsrecomline{
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #144c52;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 1%;
+  word-wrap: break-word;
+}
+.hotelsrecomlinetwo{
+  position: relative;
+  text-align: center;
+  color:#009f9d;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: -2%;
+  word-wrap: break-word;
+}
+.resultContainer {
+  position: relative; 
+  width: 100%;
+  align-items: center;
+  padding-left: 5%;
+  /* margin-right: 5%;  */
+
+
+
+}
+.sliderContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.hotel-slider-0 .slick-dots {
+  left: 10px; /* Adjust the value as needed */
+}
+
+.hotel-slider-1 .slick-dots {
+  left: 10px; /* Adjust the value as needed */
+}
+/* Styles for each hotel item */
+.hotelItem {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  transition: transform 0.3s ease; /* Add smooth transition on hover */
+}
+.hotelItem:hover {
+  transform: translateY(-5px); /* Lift the hotel item slightly on hover */
+}
+/* Styles for the slider */
+.slider {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Styles for the slider images */
+.sliderImage {
+  width: 316px;
+  height: 340px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  justify-content: center;
+}
+
+.linkProvider {
+  margin-top: 10px;
+}
+/* responsive section */
+
+@media screen and (max-width: 450px) {
+  .Navbar {
+    padding: 0.6rem 0rem;
+  }
+
+  .brand {
+    width: 100vw;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .Navbar ul {
+    flex-direction: column;
+    position: fixed;
+    top: 7%;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .open {
+    opacity: 1 !important;
+    display: flex !important;
+  }
+
+  .NavBtn {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Navbar ul {
+    top: 6%;
+  }
+
+  .NavLogo {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hotelsearchContainer {
+      width: 100%;
+      margin-left: 5%;
+  }
+
+  .search {
+      padding: 1%;
+  }
+
+  .search input {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+

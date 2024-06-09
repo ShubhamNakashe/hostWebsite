@@ -1,0 +1,76 @@
+.container {
+  width: 80%; /* Adjust the width of the container */
+  margin: 0 auto; /* Center the container */
+}
+
+
+.searchBox {
+  background-color: rgb(216, 236, 253); /* Background color of the search box */
+  padding: 10px; /* Add padding for spacing */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+.inputContainer {
+  flex: 1; /* Take up remaining space */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+.inputContainer input {
+  flex: 1; /* Take up remaining space */
+  padding: 8px; /* Add padding for input */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 4px; /* Add border radius */
+  font-size: 1rem; /* Set font size */
+}
+
+.selectDropdown {
+  margin-left: 10px; /* Add margin to separate input and select */
+  padding: 0.5rem; /* Add padding */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 4px; /* Add border radius */
+  font-size: 1rem; /* Set font size */
+}
+
+/* Decrease the size of the map */
+.leafletcontainer {
+  height: 400px; /* Set the height of the map container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  transition: box-shadow 0.3s ease; /* Transition for smooth animation */
+  z-index: 1;
+}
+
+.hospitaldetails {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leafletcontainer:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adjust shadow on hover */
+}
+
+/* Apply styles for dropdown options */
+.selectDropdown option {
+  background-color: #fff;
+  color: #000;
+  font-size: 1rem;
+}
+
+/* Style for hover effect on dropdown options */
+.selectDropdown option:hover {
+  background-color: #064248;
+  color: #fff; /* Hover text color */
+}
+
+.loadingMessage {
+  text-align: center;
+  margin: 20px 0;
+  color: #144c52;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+}

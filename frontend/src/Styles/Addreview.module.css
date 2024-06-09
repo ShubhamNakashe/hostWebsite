@@ -1,0 +1,79 @@
+.boxContainer h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .reviewtitle h1 {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .boxContainer {
+    width: 40%;
+    gap: 1rem;
+  }
+  
+  .mainDivReview {
+    background-color: rgb(216, 236, 253);
+    padding: 0.9rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
+    /* margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .mainDiv:hover {
+    /* transform: translateX(0.5rem) translateY(-0.9rem); */
+    transition: box-shadow 0.3s ease;
+    box-shadow: rgb(0, 0, 0, 0.3) 0px 10px 10px 0px;
+  }
+  
+  .mainDiv p {
+    font-size: 0.9rem;
+  }
+  
+  /* border: 1px solid #ccc; */
+  /* width: 100%;
+    margin-bottom: 10px; */
+  /* .locationcontainer,
+  .reviewcontainer {
+    width: 100%;
+    padding: 0.5rem;
+   
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  
+  } */
+  .locipbox,
+  .revipbox {
+    width: 100%;
+    padding: 0.5rem;
+  
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .savebutton {
+    width: 150px;
+    background-color: #064248;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .savebutton:hover {
+    background-color: #0f3a3f;
+  }

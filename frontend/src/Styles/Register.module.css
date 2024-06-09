@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.MainDiv {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #e0e0e0;
+  box-shadow: -9px 4px 76px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+
+.logincontainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: white;
+  overflow: hidden; /* Ensure that the container doesn't overflow */
+}
+.imagesectionbackground{
+  width: 45%;
+  height: 100vh;
+  max-width: 50%;
+  margin: 0;
+}
+.imagesectionbackground img {
+ width: 100%;
+ height: 100vh;
+}
+.quotesection {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+  color: white; /* Set the text color to contrast with the image */
+  position: absolute;
+  text-align: center;
+  font-size: 3rem;
+  font-family:  K2D; /* Adjust font family as needed */
+  font-weight: 700;
+  line-height: 50px;
+  word-wrap: break-word;
+
+}
+
+.logincontainer .textsection{
+  position: absolute;
+  width: 55%;
+  height: 100vh;
+  max-width: 55%;
+  left: 45%;
+  top: 0;
+}
+.welcomemessage{
+  top: 10%;
+  left: 20%;
+  position: absolute;
+  color: #1e1e1e;
+  font-size: 3.5rem;
+  justify-content: space-around;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 3rem;
+  word-wrap: break-word;
+}
+.inputsection{
+  top: 25%;
+  left: 20%;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: Inter;
+  font-size: 1rem;
+  gap: 1.5rem;
+  display: inline-flex;
+}
+.emailinput {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* gap: 0.4rem; */
+  display: flex;
+}
+
+.emaillabel {
+  text-align: center;
+  color: #1e1e1e;
+  font-size: 1.5rem;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 3rem;
+  word-wrap: break-word;
+}
+
+.emailinputbox {
+  width: 195%;
+  padding: 8%;
+  border-radius: 8px;
+  border: 1px #5b5b5b solid;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+  display: inline-flex;
+}
+
+.usernameinput {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* gap: 0.8rem; */
+  display: flex;
+}
+
+.passwordsection {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.8rem;
+  display: flex;
+}
+
+.passwordlabel {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  /* margin-top: 1.5rem; */
+  display: flex;
+}
+
+.passwordinput {
+  text-align: center;
+  color: #1e1e1e;
+  font-size: 1.5rem;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.5rem;
+  word-wrap: break-word;
+}
+
+.passwordinputbox {
+  width: 195%;
+  /* height: 10%; */
+  padding: 8%;
+  border-radius: 8px;
+  border: 1px #5b5b5b solid;
+  justify-content: flex-start;
+  align-items: center;
+  /* gap: 5rem; */
+  display: inline-flex;
+}
+
+.textsection .allbuttons{
+
+  position: absolute;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registerpgbutton{
+  width: 470%; 
+  /* margin-left: 93%; */
+  background: #1e1e1e;
+  border-radius: 8px;
+  border: 1px rgba(91.37, 91.37, 91.37, 0.5) solid;
+  text-align: center;
+  color: #fcfcfc;
+  font-size: 1rem;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 2rem;
+  word-wrap: break-word;
+  margin-top: 3rem; 
+}
