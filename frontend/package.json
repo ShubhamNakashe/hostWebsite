@@ -4,8 +4,8 @@
   "description": "<br/>",
   "main": "vite.config.js",
   "scripts": {
-    "build" : "npm install",
-    "dev": "vite"
+    "dev": "vite",
+    "build" : "vite build"
   },
   "keywords": [],
   "author": "",
