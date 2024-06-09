@@ -11,6 +11,7 @@ import Alert from "./Alert";
 import login from "./Login";
 import { useNavigate } from "react-router-dom";
 import port from "./port";
+import web from "./port";
 
 function Rest1() {
   const navigate = useNavigate();
@@ -28,7 +29,8 @@ function Rest1() {
 
   const fetchLocationId = async (query) => {
     try {
-      const response = await fetch(`http://localhost:${port}/api/rest/searchLocation?query=${query}`);
+      // const response = await fetch(`http://localhost:${port}/api/rest/searchLocation?query=${query}`);
+      const response = await fetch(`${web}/api/rest/searchLocation?query=${query}`);
       if (!response.ok) {
         throw new Error("Location search failed");
       }
@@ -47,7 +49,8 @@ function Rest1() {
 
   const fetchRestaurants = async (locationId) => {
     try {
-      const response = await fetch(`http://localhost:${port}/api/rest/searchRestaurants?locationId=${locationId}`);
+      // const response = await fetch(`http://localhost:${port}/api/rest/searchRestaurants?locationId=${locationId}`);
+      const response = await fetch(`${web}/api/rest/searchRestaurants?locationId=${locationId}`);
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }

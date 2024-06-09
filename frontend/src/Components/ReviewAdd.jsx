@@ -4,6 +4,7 @@ import Alert from "./Alert";
 import login from "./Login";
 import { useNavigate } from "react-router-dom";
 import port from "./port";
+import web from "./port";
 
 const ReviewAdd = () => {
   const [review, setReview] = useState({
@@ -29,7 +30,8 @@ const ReviewAdd = () => {
   const saveReview = async (username, review) => {
     try {
       const response = await fetch(
-        `http://localhost:${port}/api/itinerary/saveReview`,
+        // `http://localhost:${port}/api/itinerary/saveReview`,
+        `${web}/api/itinerary/saveReview`,
         {
           method: "POST",
           headers: {

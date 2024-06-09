@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Classes from "../Styles/Testimonials.module.css";
 import Loader from "./Loader";
 import port from "./port";
+import web from "./port";
 
 
 function Testimonials() {
@@ -14,7 +15,9 @@ function Testimonials() {
   const [forecast, setForecast] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const queryParamsRef = useRef("");
-  const apiBaseUrl = `http://localhost:${port}/api/weather`;
+  // const apiBaseUrl = `http://localhost:${port}/api/weather`;
+  const apiBaseUrl = `${web}/api/weather`;
+
 
   const search = async () => {
     setLoading(true); 

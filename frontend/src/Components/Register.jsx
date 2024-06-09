@@ -6,6 +6,7 @@ import Classes from "../Styles/trylogin.module.css"
 import Alert from './Alert';
 import login from './Login';
 import port from "./port";
+import web from "./port";
 
 function Register() {
   const [credentials, setCredentials] = useState({
@@ -45,8 +46,8 @@ function Register() {
     console.log("Password:", credentials.password);
     console.log("IP Address:", ipAddress);
 
-    const url = `http://localhost:${port}/api/auth/createUser?username=${credentials.username}&email=${credentials.email}&password=${credentials.password}&ipAddress=${credentials.ipAddress}&UserType=${UserType}`;
-
+    // const url = `http://localhost:${port}/api/auth/createUser?username=${credentials.username}&email=${credentials.email}&password=${credentials.password}&ipAddress=${credentials.ipAddress}&UserType=${UserType}`;
+    const url = `${web}/api/auth/createUser?username=${credentials.username}&email=${credentials.email}&password=${credentials.password}&ipAddress=${credentials.ipAddress}&UserType=${UserType}`;
     try {
       const response = await fetch(url, {
         method: "POST",

@@ -14,6 +14,8 @@ import 'react-datepicker/dist/react-datepicker.css';
 import Loader from './Loader';
 import Alert from './Alert';
 import port from './port';
+import web from './port';
+
 function About() {
   const [loading, setLoading] = useState(false);
   const [selectedTitle, setSelectedTitle] = useState("");
@@ -24,7 +26,9 @@ function About() {
   const [lat, setLat] = useState("");
   const [lon, setLon] = useState("");
   const [showAlert, setShowAlert] = useState(false);
-  const API_URL_openweather = `http://localhost:${port}/api/weather/current`;
+  // const API_URL_openweather = `http://localhost:${port}/api/weather/current`;
+  const API_URL_openweather = `${web}/api/weather/current`;
+
   const today = new Date();
   const user = JSON.parse(localStorage.getItem("currentuser"));
   const navigate = useNavigate();
@@ -90,7 +94,9 @@ function About() {
 
 
 
-        const secondResponse = await fetch(`http://localhost:${port}/api/hotel/search?latitude=${lat}&longitude=${lon}&checkIn=${formattedCheckIn}&checkOut=${formattedCheckOut}`);
+        // const secondResponse = await fetch(`http://localhost:${port}/api/hotel/search?latitude=${lat}&longitude=${lon}&checkIn=${formattedCheckIn}&checkOut=${formattedCheckOut}`);
+        const secondResponse = await fetch(`${web}/api/hotel/search?latitude=${lat}&longitude=${lon}&checkIn=${formattedCheckIn}&checkOut=${formattedCheckOut}`);
+        
         const secondJson = await secondResponse.json();
 
         if (!secondJson.data) {

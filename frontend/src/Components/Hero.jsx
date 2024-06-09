@@ -17,6 +17,7 @@ import Reviewview from "./Reviewview";
 import Loader from './Loader'
 import Alert from "./Alert";
 import port from "./port";
+import web from "./port";
 
 
 function Hero() {
@@ -81,7 +82,9 @@ function Hero() {
             cuisine: selectedCuisines,
           });
     
-          const response = await fetch(`http://localhost:${port}/api/gemini/generatePlan`, {
+          // const response = await fetch(`http://localhost:${port}/api/gemini/generatePlan`, {
+          const response = await fetch(`${web}/api/gemini/generatePlan`, {
+
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -138,7 +141,9 @@ function Hero() {
     
     const saveItinerary = async (username, searchIti) => {
     try {
-      const response = await fetch(`http://localhost:${port}/api/itinerary/saveItinerary`, {
+      // const response = await fetch(`http://localhost:${port}/api/itinerary/saveItinerary`, {
+      const response = await fetch(`${web}/api/itinerary/saveItinerary`, {
+
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
