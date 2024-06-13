@@ -12,8 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.2.8",
-    "vite-plugin-static-copy": "^1.0.5"
+    "vite": "^5.2.8"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.5.2",

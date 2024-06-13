@@ -10,32 +10,10 @@
   
 }
 
-.Navbar {
-  width: 100%;
-  height: 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 0.6rem 2rem;
-  z-index: 1000;
-  box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.335);
-}
-
-
-.menuIcon {
-  font-size: 1.5rem;
-}
-
 .mainimage {
   margin-top: 5%;
   width: 100%;
-  max-width: 100vw; /* Ensure the image does not exceed the viewport width */
-  height: 80vh; /* Set the height to 80vh or adjust as needed */
+  height: 80vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,67 +24,70 @@
 
 .mainimage img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  height: 75vh;
+  object-fit: cover; 
   border-radius:10px ;
-  margin: 5 5%; /* Add margin on both sides */
+  margin: 5 5%; 
 }
-
+@media screen and (max-width: 768px) {
+  .mainimage{
+    max-height: 20vh; 
+  }
+}
 
 .hotelsearchContainer {
   position: absolute;
-  width: 90%;
-  height:auto;
+  top: 50%; /* Adjust as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%; /* Adjust width as needed */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
   border-radius: 10px;
-  background-color: white;
-
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column;
+  align-items: center;
 }
 
 .search {
   display: flex;
-  flex-wrap:wrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  color: '#1E1E1E';
-  font-size: 20px;
-  font-weight: 700;
-  word-wrap: 'break-word';
-  padding: 2%;
+  gap: 20px;
 }
 
+
+
 .search input {
-  flex-grow: 1;
-  /* margin-right: 10px; */
-  border: none;
-  border-bottom: 1px solid #999;
-  box-shadow: 0 1px 0 0 grey;
-  outline: none;
-  padding: 5px;
-  font-size: 16px;
-  color: #1E1E1E;
+  padding: 10px;
+  
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .search button {
-  
-  width: 8%; /* Make the button take the full width on smaller screens */
-  /* Add space between input and button on smaller screens */
-  background: #144c52;
+  background-color: #144c52;
   color: white;
-  border: transparent;
-  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
   cursor: pointer;
-  padding: 8px; /* Adjust padding as needed */
+  width: 50%;
+  transition: background-color 0.3s;
 }
-
-
-.search input::placeholder {
-  color: #999;
-  font-weight: 400;
+.title {
+  margin-bottom: 5px;
 }
-
-.search input:focus {
-  border-bottom: 2px solid #009f9d;
-  box-shadow: 0 2px 0 0 #009f9d;
+.dateInputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hotelsrecomline{

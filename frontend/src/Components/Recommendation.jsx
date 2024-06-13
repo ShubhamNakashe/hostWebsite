@@ -11,7 +11,7 @@ import Destination6 from "../assets/dubai.jpg";
 import info1 from "../assets/info1.png";
 import info2 from "../assets/info2.png";
 import info3 from "../assets/info3.png";
-import staycation from "../assets/stay2.mp4";
+import staycation from "../assets/stay1.mp4";
 
 function Recommendation() {
 

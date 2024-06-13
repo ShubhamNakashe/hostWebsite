@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Classes from "../Styles/Addreview.module.css";
 import Alert from "./Alert";
-import login from "./Login";
 import { useNavigate } from "react-router-dom";
 import port from "./port";
-import web from "./port";
 
 const ReviewAdd = () => {
   const [review, setReview] = useState({
@@ -16,6 +14,7 @@ const ReviewAdd = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [showUserAlert, setShowUserAlert] = useState(false);
   const navigate = useNavigate();
+
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem("currentuser"));
     if (storedUser) {
@@ -30,8 +29,7 @@ const ReviewAdd = () => {
   const saveReview = async (username, review) => {
     try {
       const response = await fetch(
-        // `http://localhost:${port}/api/itinerary/saveReview`,
-        `${web}/api/itinerary/saveReview`,
+        `${port}/api/itinerary/saveReview`,
         {
           method: "POST",
           headers: {
@@ -66,15 +64,11 @@ const ReviewAdd = () => {
       setShowUserAlert(true); // Show alert if no user is logged in
       return;
     }
-    saveReview(currentUser.username,review);
-    // if (currentUser) {
-    //   saveReview(currentUser.username, review);
-    // }
-    
-
+    saveReview(currentUser.username, review);
   };
+
   const redirectToLogin = () => {
-    navigate('/login');
+    navigate("/login");
   };
 
   return (
@@ -86,13 +80,13 @@ const ReviewAdd = () => {
           onConfirm={() => setShowAlert(false)}
         />
       )}
-       {showUserAlert && (
-          <Alert
-            message="Login to search."
-            onClose={() => setShowUserAlert(false)}
+      {showUserAlert && (
+        <Alert
+          message="Login to search."
+          onClose={() => setShowUserAlert(false)}
           onConfirm={redirectToLogin}
-          />
-        )}
+        />
+      )}
       <div className={Classes.reviewtitle}>
         <h1 style={{ marginTop: "2%", fontStyle: "" }}>
           Want to leave some review about your trip?
@@ -115,8 +109,7 @@ const ReviewAdd = () => {
               />
             </div>
             <div className={Classes.reviewcontainer}>
-              <input
-                type="text"
+              <textarea
                 className={Classes.revipbox}
                 placeholder="Review"
                 name="review"

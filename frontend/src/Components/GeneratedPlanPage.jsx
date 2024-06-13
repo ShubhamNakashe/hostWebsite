@@ -11,7 +11,6 @@ import ItineraryUI from "./ItineraryUI";
 import PDFiti from "./PDFiti";
 import Alert from "./Alert";
 import port from "./port";
-import web from "./port";
 
 const formatContent = (text) => {
   const lines = text.split("\n");
@@ -60,8 +59,7 @@ function Generatedplan() {
       setLoading(true);
       // Make API call to fetch bookmarked itineraries
       const response = await axios.get(
-        // `http://localhost:${port}/api/itinerary/getBookmarkedItineraries/${user.username}`
-        `${web}/api/itinerary/getBookmarkedItineraries/${user.username}`
+        `${port}/api/itinerary/getBookmarkedItineraries/${user.username}`
       );
       setBookmarkedItineraries(response.data.bookmarkedItineraries);
       setLoading(false);
@@ -95,8 +93,7 @@ function Generatedplan() {
 
       // Make a POST request to the API endpoint
       const response = await fetch(
-        // `http://localhost:${port}/api/itinerary/saveBookmarkedItinerary`,
-        `${web}/api/itinerary/saveBookmarkedItinerary`,
+        `${port}/api/itinerary/saveBookmarkedItinerary`,
         {
           method: "POST",
           headers: {

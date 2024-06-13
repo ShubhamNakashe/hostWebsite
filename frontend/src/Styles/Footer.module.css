@@ -1,126 +1,4 @@
-/* .app {
-  max-width: 1200px;
-}
 
-.footer {
-  width: 100%;
-  padding: 1.5rem 4rem;
-  background-color:#d9f2ff;
-  color:black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
-  margin-top: 2%;
-}
-
-.footerInfo {
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-.footerInfo img {
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  padding: 0.2rem;
-  border-radius: 50%;
-  margin-top: 2rem;
-  margin-right: 1rem;
-  cursor: pointer;
-}
-
-.socialLink {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.socialLink img {
-  width: 100px;
-  height: auto;
-  
-}
-
-
-
-.footerLogo {
-  text-align: center;
-}
-
-.footerLogo a {
-  text-decoration: none;
-  color:black;
-}
-
-.footerLogo img {
-  width: 90px;
-  height: 80px;
-  padding: 0.5rem;
-  border-radius: 50%;
-  border: 1px solid white;
-}
-
-.footerLogo p {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.footerLogo span {
-  color: rgb(143, 9, 245);
-}
-
-.footerInfo p {
-  width: 300px;
-  font-size: 0.9rem;
-  padding: 0.4rem 0 1rem 0;
-}
-
-.footerInfo input {
-  border: none;
-  outline: none;
-  color:black;
-  padding: 0.3rem;
-  position: relative;
-
-  background-color: transparent;
-  border-bottom: 1px solid black;
-}
-
-.footerInfo button {
-  position: absolute;
-  padding: 0.3rem 0.4rem;
-  background-color: transparent;
-  border: 1px solid black;
-  color:black;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
-.footerInfo button:hover {
-  background-color:rgb(143, 9, 245);
-  border-color:rgb(143, 9, 245)!important;
-}
-
-
-@media screen and (max-width: 450px) {
-  .footerContainer {
-    padding: 0 1rem;
-  }
-
-  .footer {
-    padding: 1rem 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 2rem;
-  }
-
-  .footerInfo {
-    margin-left: 2rem;
-  }
-} */
 .app {
   max-width: 1200px;
 }
@@ -128,7 +6,7 @@
 .footer {
   width: 100%;
   padding: 1.5rem 4rem;
-  background-color: #d9f2ff;
+  background-color:  #dffbfb;
   color: black;
   display: flex;
   justify-content: center;
@@ -154,7 +32,7 @@
 }
 
 .span1 {
-  color: #009f9d;
+  color:  #37b7fc;
 }
 
 .span2 {

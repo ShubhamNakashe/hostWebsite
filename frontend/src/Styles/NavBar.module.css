@@ -16,7 +16,8 @@
 .NavLogo {
   font-size: 1.6rem;
   text-transform: uppercase;
-  color: #009f9d;
+  /* color: #009f9d; */
+  color:#009f9d;
 }
 
 .NavLogo span {
@@ -24,7 +25,7 @@
 }
 
 .active {
-  color:  #009f9d!important;
+  color: #009f9d !important;
 }
 
 .Navbar ul {
@@ -47,7 +48,7 @@
 }
 
 .Navbar ul li a:hover {
-  color: #009f9d;
+  color:  #009f9d;
 }
 
 .NavBtn {

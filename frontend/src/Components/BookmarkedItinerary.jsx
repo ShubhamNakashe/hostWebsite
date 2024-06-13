@@ -9,7 +9,6 @@ import Loader from "./Loader";
 import Alert from "./Alert";
 
 import port from "./port";
-import web from "./port"
 
 function BookmarkedItineraries() {
   const [bookmarkedItineraries, setBookmarkedItineraries] = useState([]);
@@ -30,9 +29,7 @@ function BookmarkedItineraries() {
     try {
       setLoading(true);
       const response = await axios.get(
-        // `http://localhost:${port}/api/itinerary/getBookmarkedItineraries/${user.username}`
-        `${web}/api/itinerary/getBookmarkedItineraries/${user.username}`
-      
+        `${port}/api/itinerary/getBookmarkedItineraries/${user.username}`
       );
       setBookmarkedItineraries(response.data.bookmarkedItineraries);
 
@@ -46,9 +43,7 @@ function BookmarkedItineraries() {
   const handleRemoveBookmark = async (indexToRemove) => {
     try {
       const response = await axios.post(
-        // `http://localhost:${port}/api/itinerary/removeBookmarkedItinerary`,
-        `${web}/api/itinerary/removeBookmarkedItinerary`,
-       
+        `${port}/api/itinerary/removeBookmarkedItinerary`,
         {
           username: user.username,
           indexToRemove: indexToRemove,

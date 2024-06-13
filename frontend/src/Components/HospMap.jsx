@@ -13,13 +13,8 @@ import Classes from "../Styles/Map.module.css";
 import Alert from "./Alert";
 import { useNavigate } from "react-router-dom";
 import port from "./port";
-import web from "./port";
-
-// const API_URL = `http://localhost:${port}/api/HospMap/search`;
-const API_URL = `${web}/api/HospMap/search`;
-
-// const API_URL_openweather = `http://localhost:${port}/api/weather/current`;
-const API_URL_openweather = `${web}/api/weather/current`;
+const API_URL = `${port}/api/HospMap/search`;
+const API_URL_openweather = `${port}/api/weather/current`;
 
 function LocationMarker({ lat, lon }) {
   const [position, setPosition] = useState(null);

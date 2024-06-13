@@ -7,7 +7,6 @@ import googleicon_img from "../assets/googleicon_img.png";
 import Classes from "../Styles/Login.module.css";
 import Alert from "./Alert";
 import port from "./port";
-import web from "./port";
 
 function Login() {
   const [credentials, setCredentials] = useState({
@@ -25,9 +24,7 @@ function Login() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // const url = `http://localhost:${port}/api/auth/Login?username=${credentials.username}&password=${credentials.password}`;
-    const url = `${web}/api/auth/Login?username=${credentials.username}&password=${credentials.password}`;
-    
+    const url = `${port}/api/auth/Login?username=${credentials.username}&password=${credentials.password}`;
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -107,8 +104,7 @@ function Login() {
   
         // Now fetch the user profile using your server as a proxy
         const serverResponse = await fetch(
-          // `http://localhost:${port}/api/auth/googleUser?email=${profileData.email}&username=${profileData.name}&password=${profileData.email}&ipAddress=${profileData.email}`,
-          `${web}/api/auth/googleUser?email=${profileData.email}&username=${profileData.name}&password=${profileData.email}&ipAddress=${profileData.email}`,
+          `${port}/api/auth/googleUser?email=${profileData.email}&username=${profileData.name}&password=${profileData.email}&ipAddress=${profileData.email}`,
           {
             method: 'GET',
             headers: {

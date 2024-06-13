@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Classes from "../Styles/Reviewview.module.css";
 import port from "./port";
-import web from "./port";
 
 const Reviewview = () => {
   const [reviews, setReviews] = useState([]);
@@ -10,8 +9,7 @@ const Reviewview = () => {
     const fetchReviews = async () => {
       try {
         const response = await fetch(
-          // `http://localhost:${port}/api/itinerary/getAllReviews`
-          `${web}/api/itinerary/getAllReviews`
+          `${port}/api/itinerary/getAllReviews`
         );
         const data = await response.json();
 

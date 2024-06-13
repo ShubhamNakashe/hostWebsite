@@ -1,3 +1,9 @@
+/* General styling */
+body {
+  margin: 0; /* Reset the default margin */
+  padding: 0; /* Reset the default padding */
+}
+
 .recommendation {
   width: 100%;
   padding: 2rem 0;
@@ -29,12 +35,12 @@
   padding: 1rem 0.7rem;
   cursor: pointer;
   font-size: 0.9rem;
-  border-bottom: 0.2rem solid  aliceblue;
+  border-bottom: 0.2rem solid aliceblue;
 }
 
 .Active {
-  color:rgb(143, 9, 245);
-  border-bottom: 3px solid rgb(143, 9, 245) !important;
+  color: #144c52;
+  border-bottom: 3px solid #144c52 !important;
 }
 
 .recommendationBox {
@@ -46,7 +52,8 @@
 
 .box {
   padding: 0.5rem;
-  background-color:#d9f2ff;
+  background-color:  #dffbfb;
+  /* background-color: #d1fffe; */
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -92,7 +99,7 @@
   padding: 0.2rem 0.3rem;
   margin-right: 0.2rem;
   border-radius: 50%;
-  background-color: rgb(143, 9, 245);
+  background-color: #144c52;
   color: white;
 }
 
@@ -109,6 +116,7 @@
 .details p {
   font-size: 0.8rem;
 }
+
 .search-bar {
   display: flex;
   margin: 10px;
@@ -123,319 +131,212 @@ input {
 
 button {
   padding: 8px 12px;
-  background-color: body {
-    margin: 0; /* Reset the default margin to ensure the content is not offset */
-    padding: 0; /* Reset the default padding */
-  }
-  
-  .maincontainer {
-    margin-top: 90px;
-  }
-  
-  .Travel-Plan {
-    font-family: Arial, sans-serif;
-    margin: 200px;
-  }
-  
-  .loader {
-    margin-left: 500px;
-    text-align: center;
-  }
-  
-  .loader h2 {
-    font-family: Arial, sans-serif;
-  }
-  
-  .loader img {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .plan-details {
-    font-family: Arial, sans-serif;
-  }
-  
-  .heading {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .plan-details p {
-    font-size: 20px;
-    font-family: Georgia, serif;
-    color: #555;
-    line-height: 1.5;
-    margin-left: 200px;
-  }
-  /* generatedplan.css */
-  
-  /* Highlight specific words in the generated plan */
-  .dayheader {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333; /* You can change the color as per your preference */
-    margin-bottom: 10px;
-  }
-  
-  .planitem {
-    margin-bottom: 8px;
-    line-height: 1.4;
-  }
-  
-  .morning-highlight {
-    background-color: yellow;
-    font-weight: bold;
-  }
-  .allbuttons {
-    width: 60%;
-    margin-top: 7%;
-    font-style: bold;
-    height: 10%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  .pdfButton,
-  .bookmarksdisplayButton,
-  .displayButton {
-    background-color: #144c52;
-    border: none;
-    color: white;
-    border-radius: 20px 20px 20px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    /* padding: 20px; */
-    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
-  }
-  
-  .pdfButton:hover,
-  .bookmarksdisplayButton:hover,
-  .displayButton:hover {
-    background-color: #144c52;
-    border: none;
-    color: white;
-    border-radius: 20px 20px 20px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    /* padding: 10px; */
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5);
-  }
-  
-  .Navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0.6rem 2rem;
-    z-index: 1000;
-    box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.335);
-  }
-  
-  .NavLogo {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    color: #009f9d;
-  }
-  
-  .NavLogo span {
-    color: #144c52;
-  }
-  
-  .active {
-    color: #009f9d !important;
-  }
-  
-  .Navbar ul {
-    display: flex;
-    gap: 1.5rem;
-    text-transform: uppercase;
-  }
-  
-  .Navbar ul li {
-    font-size: 0.9rem;
-    list-style: none;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    font-weight: 600;
-  }
-  
-  .Navbar ul li a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .Navbar ul li a:hover {
-    color: #009f9d;
-  }
-  
-  .NavBtn {
-    margin-right: 4rem;
-    padding: 0.5rem 1.1rem;
-    border-radius: 4px;
-    border: 1px solid white;
-    background-color: white;
-    color: #009f9d;
-    cursor: pointer;
-    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Added transition */
-    font-size: 1.5vw;
-    font-style: bold;
-    font-family: "Merriweather";
-    text-transform: uppercase;
-    box-shadow: 2px 2px 2px 1px rgba(110, 48, 0, 0.16);
-  }
-  
-  .NavBtn:hover {
-    border: 0px solid #009f9d;
-    background-color: #009f9d;
-    color: #fff;
-  }
-  
-  .hamburger {
-    display: none;
-  }
-  
-  .menuIcon {
-    font-size: 1.5rem;
-  }
-  
-  .travelTable {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px; /* Adjust margin as needed */
-  }
-  
-  .travelTable th,
-  .travelTable td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .travelTable .dayHeader {
-    font-weight: bold;
-    background-color: #f2f2f2;
-  }
-  
-  .travelTable .morning-highlight {
-    color: #0066cc;
-    font-weight: bold;
-  }
-  
-  /* responsive section */
-  
-  @media screen and (max-width: 450px) {
-    .Navbar {
-      padding: 0.6rem 0rem;
-    }
-  
-    .brand {
-      width: 100vw;
-      display: flex;
-      padding: 0 1rem;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .hamburger {
-      display: block;
-      cursor: pointer;
-    }
-  
-    .Navbar ul {
-      flex-direction: column;
-      position: fixed;
-      top: 7%;
-      align-items: center;
-      background-color: #fff;
-      width: 100%;
-      margin: auto;
-      padding: 1rem 0;
-      display: none;
-      opacity: 0;
-      transition: all 0.3s ease-in-out;
-    }
-  
-    .open {
-      opacity: 1 !important;
-      display: flex !important;
-    }
-  
-    .NavBtn {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 320px) {
-    .Navbar ul {
-      top: 6%;
-    }
-  
-    .NavLogo {
-      font-size: 1.2rem;
-      text-transform: uppercase;
-    }
-  }
-  
-  /* Update the styles for the travel table */
-  .travelTable {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .travelTable th,
-  .travelTable td {
-    padding: 8px;
-    border: 1px solid #ddd;
-  }
-  
-  .travelTable .dayHeader {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
-  
-  .travelTable .daysched {
-    background-color: #2f789c;
-    font-weight: bold;
-  }
-  
-  .travelTable .safetyHeader {
-    background-color: #ffeeba; /* You can adjust this color */
-    font-weight: bold;
-  }
-  
-  /* Apply styles to rows based on their content */
-  .travelTable tbody tr:has(td:empty) {
-    /* Style rows with empty second column */
-    background-color: #f9f9f9; /* You can adjust this color */
-  }
-  
-  .travelTable tbody tr:has(td:not(:empty):not(.dayHeader):not(.safetyHeader)) {
-    /* Style rows with non-empty second column that are not headers */
-    background-color: #a8f6ff; /* You can adjust this color */
-  }
-  
-  /* Highlight text */
-  .travelTable tbody tr td .morninghighlight,
-  .travelTable tbody tr td .afternoon-highlight,
-  .travelTable tbody tr td .evening-highlight {
-    color: rgb(0, 75, 80); /* You can adjust this color */
-    font-weight: bold;
-  };
-  color: #fff;
+  background-color: #009f9d; /* Added background color */
+  color: #fff; /* Added text color */
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-/* responsive section */
+button:hover {
+  background-color: #007b7a; /* Added hover effect */
+}
 
+/* Travel Plan */
+.maincontainer {
+  margin-top: 90px;
+}
+
+.Travel-Plan {
+  font-family: Arial, sans-serif;
+  margin: 200px;
+}
+
+.loader {
+  margin-left: 500px;
+  text-align: center;
+}
+
+.loader h2 {
+  font-family: Arial, sans-serif;
+}
+
+.loader img {
+  width: 80px;
+  height: 80px;
+}
+
+.plan-details {
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.plan-details p {
+  font-size: 20px;
+  font-family: Georgia, serif;
+  color: #555;
+  line-height: 1.5;
+  margin-left: 200px;
+}
+
+/* Generated Plan */
+.dayheader {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.planitem {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.morning-highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.allbuttons {
+  width: 60%;
+  margin-top: 7%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pdfButton,
+.bookmarksdisplayButton,
+.displayButton {
+  background-color: #144c52;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+}
+
+.pdfButton:hover,
+.bookmarksdisplayButton:hover,
+.displayButton:hover {
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5);
+}
+
+/* Navbar */
+.Navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.6rem 2rem;
+  z-index: 1000;
+  box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.335);
+}
+
+.NavLogo {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #009f9d;
+}
+
+.NavLogo span {
+  color: #144c52;
+}
+
+.active {
+  color: #009f9d !important;
+}
+
+.Navbar ul {
+  display: flex;
+  gap: 1.5rem;
+  text-transform: uppercase;
+}
+
+.Navbar ul li {
+  font-size: 0.9rem;
+  list-style: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+.Navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.Navbar ul li a:hover {
+  color: #009f9d;
+}
+
+.NavBtn {
+  margin-right: 4rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  border: 1px solid white;
+  background-color: white;
+  color: #009f9d;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  font-size: 1.5vw;
+  font-style: bold;
+  font-family: "Merriweather";
+  text-transform: uppercase;
+  box-shadow: 2px 2px 2px 1px rgba(110, 48, 0, 0.16);
+}
+
+.NavBtn:hover {
+  border: 0px solid #009f9d;
+  background-color: #009f9d;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+}
+
+.menuIcon {
+  font-size: 1.5rem;
+}
+
+.travelTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.travelTable th,
+.travelTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.travelTable .dayHeader {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.travelTable .morning-highlight {
+  color: #0066cc;
+  font-weight: bold;
+}
+
+/* Responsive section */
 @media screen and (max-width: 450px) {
   .recommendation {
     padding: 2rem 1rem;
@@ -449,4 +350,98 @@ button {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
   }
+
+  .Navbar {
+    padding: 0.6rem 0;
+  }
+
+  .brand {
+    width: 100vw;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .Navbar ul {
+    flex-direction: column;
+    position: fixed;
+    top: 7%;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .open {
+    opacity: 1 !important;
+    display: flex !important;
+  }
+
+  .NavBtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Navbar ul {
+    top: 6%;
+  }
+
+  .NavLogo {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
+
+/* Update the styles for the travel table */
+.travelTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.travelTable th,
+.travelTable td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.travelTable .dayHeader {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.travelTable .daysched {
+  background-color: #2f789c;
+  font-weight: bold;
+}
+
+.travelTable .safetyHeader {
+  background-color: #ffeeba;
+  font-weight: bold;
+}
+
+/* Apply styles to rows based on their content */
+.travelTable tbody tr:has(td:empty) {
+  background-color: #f9f9f9;
+}
+
+.travelTable tbody tr:has(td:not(:empty):not(.dayHeader):not(.safetyHeader)) {
+  background-color: #a8f6ff;
+}
+
+.morninghighlight,
+.afternoon-highlight,
+.evening-highlight {
+  color: rgb(0, 75, 80);
+  font-weight: bold;
 }
