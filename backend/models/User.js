@@ -22,14 +22,14 @@ const userSchema = new Schema(
       required: true,
     },
 
-    lastLogin: {
-      type: Date,
-      default: null,
-    },
-    lastLogout: {
-      type: Date,
-      default: null,
-    },
+    // lastLogin: {
+    //   type: Date,
+    //   default: null,
+    // },
+    // lastLogout: {
+    //   type: Date,
+    //   default: null,
+    // },
 
     searchItiHistory: [
       {
@@ -46,8 +46,16 @@ const userSchema = new Schema(
         location: String,
         checkin: String,
         checkout: String,
-        adults: Number,
-        child: Number,
+        
+      }
+    ],
+
+    searchRestHistory: [
+      {
+        location: String,
+        date: String,
+        rating: Number,
+        
       }
     ],
     reviews: [

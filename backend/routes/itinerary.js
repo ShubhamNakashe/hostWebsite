@@ -1,61 +1,126 @@
+// const express = require('express');
+// const router = express.Router();
+// const UserModel = require('../models/User');
+// const fetch = require('node-fetch');
+
+// router.post('/saveItinerary', async (req, res)=>{
+//     const {username,searchIti}=req.body;
+  
+//     try{
+//       const user = await UserModel.findOne({username});
+//       if(user){
+//         const itineraryItem = {
+//           destination: searchIti.destination,
+//           numberofPeople: searchIti.numberofPeople,
+//           attractions : searchIti.attractions,
+//           cuisine : searchIti.cuisine,
+      
+//         };
+//           user.searchItiHistory.push(itineraryItem);
+//           await user.save();
+//           res.json({success : true , msg:'Searched info saved successfully'});
+//       }else{
+//           res.status(404).json({success:false , msg:'User not found'});
+//       }
+  
+//     }catch(error){
+//       console.error('Error saving itinerary information',error);
+//       res.status(500).json({success:false ,msg:'ServerError'})
+//     }
+  
+//   });
+  
 const express = require('express');
 const router = express.Router();
 const UserModel = require('../models/User');
-const fetch = require('node-fetch');
 
-router.post('/saveItinerary', async (req, res)=>{
-    const {username,searchIti}=req.body;
-  
-    try{
-      const user = await UserModel.findOne({username});
-      if(user){
-        const itineraryItem = {
-          destination: searchIti.destination,
-          numberofPeople: searchIti.numberofPeople,
-          attractions : searchIti.attractions,
-          cuisine : searchIti.cuisine,
-        };
-          user.searchItiHistory.push(itineraryItem);
-          await user.save();
-          res.json({success : true , msg:'Searched info saved successfully'});
-      }else{
-          res.status(404).json({success:false , msg:'User not found'});
-      }
-  
-    }catch(error){
-      console.error('Error saving itinerary information',error);
-      res.status(500).json({success:false ,msg:'ServerError'})
+router.post('/saveItinerary', async (req, res) => {
+  const { username, searchIti } = req.body;
+
+  try {
+    const user = await UserModel.findOne({ username });
+    if (user) {
+      const itineraryItem = {
+        destination: searchIti.destination,
+        numberofPeople: searchIti.numberofPeople,
+        attractions: searchIti.attractions,
+        cuisine: searchIti.cuisine,
+      };
+
+      user.searchItiHistory.push(itineraryItem);
+      await user.save();
+
+      res.json({ success: true, msg: 'Searched info saved successfully' });
+    } else {
+      res.status(404).json({ success: false, msg: 'User not found' });
     }
-  
-  });
-  
-  
-  router.post('/saveHotel', async (req, res)=>{
-      const {username,searchHotel}=req.body;
-    
-      try{
-        const user = await UserModel.findOne({username});
-        if(user){
-          const hotelItem = {
-            location:searchHotel.location ,
-            checkin:searchHotel.checkin ,
-            checkout:searchHotel.checkout ,
-            adults:searchHotel.adults ,
-            child:searchHotel.child ,
-          };
-            user.searchHotelHistory.push(hotelItem);
-            await user.save();
-            res.json({success : true , msg:'Searched info saved successfully'});
-        }else{
-            res.status(404).json({success:false , msg:'User not found'});
-        }
-    
-      }catch(error){
-        console.error('Error saving itinerary information',error);
-        res.status(500).json({success:false ,msg:'ServerError'})
-      }
-    
-    });
+  } catch (error) {
+    console.error('Error saving itinerary information', error);
+    res.status(500).json({ success: false, msg: 'ServerError' });
+  }
+});
+
+
+
+router.post('/saveHotel', async (req, res) => {
+  const { username, searchHotel } = req.body;
+
+  try {
+    const user = await UserModel.findOne({ username });
+    if (user) {
+      const hotelItem = {
+        location: searchHotel.location,
+        checkin: searchHotel.checkin,
+        checkout: searchHotel.checkout,
+      };
+
+      user.searchHotelHistory.push(hotelItem);
+      await user.save();
+      res.json({ success: true, msg: 'Searched info saved successfully' });
+    } else {
+      res.status(404).json({ success: false, msg: 'User not found' });
+    }
+  } catch (error) {
+    console.error('Error saving hotel information', error);
+    res.status(500).json({ success: false, msg: 'ServerError' });
+  }
+});
+
+router.post('/saveRest', async (req, res) => {
+  try {
+    const { username, searchRest } = req.body;
+
+    console.log('Received request to save restaurant data:', { username, searchRest });
+
+    const user = await UserModel.findOne({ username });
+
+    if (user) {
+      const RestItem = {
+        location: searchRest.location,
+        date: searchRest.date,
+        rating: searchRest.rating,
+      };
+
+      user.searchRestHistory.push(RestItem);
+      await user.save();
+      console.log('Restaurant data saved successfully');
+
+      // Retrieve the user again after saving to ensure data is updated
+      const updatedUser = await UserModel.findOne({ username });
+      console.log('User after saving restaurant data:', updatedUser);
+
+      res.json({ success: true, msg: 'Searched info saved successfully' });
+    } else {
+      console.log('User not found');
+      res.status(404).json({ success: false, msg: 'User not found' });
+    }
+  } catch (error) {
+    console.error('Error saving restaurant information:', error);
+    res.status(500).json({ success: false, msg: 'ServerError' });
+  }
+});
+
+
     
     router.post("/saveReview", async (req, res) => {
       const { username, review } = req.body;
