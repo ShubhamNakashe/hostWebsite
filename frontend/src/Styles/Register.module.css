@@ -155,7 +155,7 @@ body {
   display: inline-flex;
 }
 
-.textsection .allbuttons{
+.textsection {
 
   position: absolute;
   top: 100%;
@@ -175,7 +175,7 @@ body {
   font-size: 1rem;
   font-family: Inter;
   font-weight: 600;
-  line-height: 2rem;
+  line-height: 1rem;
   word-wrap: break-word;
-  margin-top: 3rem; 
+  
 }

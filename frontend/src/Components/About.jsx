@@ -104,39 +104,37 @@ function About() {
     }
     await fetchData(); // Fetch coordinates based on location
   
-    if (lat && lon) {
-      const searchHotel = {
-        location: selectedTitle,
-        checkin: checkIn ? checkIn.toISOString() : "",
-        checkout: checkOut ? checkOut.toISOString() : "",
-      };
+    const searchHotel = {
+      location: selectedTitle,
+      checkin: checkIn ? checkIn.toISOString() : "",
+      checkout: checkOut ? checkOut.toISOString() : "",
+    };
   
-      try {
-        const response = await fetch(`${port}/api/itinerary/saveHotel`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            username: user.username,
-            searchHotel,
-          }),
-        });
-        
-        if (!response.ok) {
-          throw new Error('Failed to save hotel search data');
-        }
+    try {
+      const response = await fetch(`${port}/api/itinerary/saveHotel`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username: user.username,
+          searchHotel,
+        }),
+      });
   
-        const result = await response.json();
-  
-        if (!result.success) {
-          throw new Error('Server error: ' + result.msg);
-        }
-  
-        console.log("Hotel search data saved successfully");
-      } catch (error) {
-        console.error("Error saving hotel search data:", error);
+      if (!response.ok) {
+        throw new Error('Failed to save hotel search data');
       }
+  
+      const result = await response.json();
+  
+      if (!result.success) {
+        throw new Error('Server error: ' + result.msg);
+      }
+  
+      console.log("Hotel search data saved successfully");
+    } catch (error) {
+      console.error("Error saving hotel search data:", error);
     }
   };
   
@@ -308,3 +306,5 @@ function About() {
  };
  
  export default About;
+ 
+ 

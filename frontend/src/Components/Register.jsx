@@ -74,9 +74,7 @@ function Register() {
   const redirectToLogin = () => {
     navigate('/login');
   };
-  const redirectToRegsiter = () => {
-    navigate('/Register');
-  };
+
   return (
     <section id='login' className={Classes.MainDiv}>
       {showSuccessAlert && (
@@ -169,14 +167,16 @@ function Register() {
                   </div>
                 </div>
               </div>
-              <div className={Classes.allbuttons}>
+              
                 <div>
                   <button className={Classes.registerpgbutton} type="submit">
                     Register
                   </button>
-                </div>
+                
               </div>
+              <div className={Classes.signin} >Already on Roammate ??<a href="/login"> Sign in</a></div>
             </div>
+            
           </div>
         </div>
       </form>

@@ -220,18 +220,20 @@ function Login() {
               </form>
               
 
-              <div className={Classes.allbuttons}>
+             
           
          
                <div className={Classes.orlabel}>Or</div>
         
   
            <div>
+
                   <GoogleLogin
                     onSuccess={handleGoogleLoginSuccess}
                     onError={() => {
                       console.log("Google Login Failed");
                     }}
+                    width={"500px"}
                   >
                     <img
                       className={Classes.googleimage}
@@ -242,18 +244,15 @@ function Login() {
                   </GoogleLogin>
                 </div>
           
-          <div className={Classes.Registerbuttonsection}>
-          <a href="/Register">
+           <a href="/Register">
             <button className={Classes.registerbutton}type="submit">
               Register as new user
             </button>
           </a>
-      </div>
           </div>
             </div>
           </div>
          
-        </div>
       </section>
     </>
   );

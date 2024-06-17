@@ -66,13 +66,14 @@ body {
   font-weight: bold;
 }
 .allbuttons {
-  width: 60%;
+
+  width: 100%; 
   margin-top: 7%;
-  font-style: bold;
-  height: 10%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-evenly; 
   align-items: center;
+  white-space: nowrap;
+  flex-wrap: wrap;
 }
 
 .pdfButton,
@@ -81,26 +82,34 @@ body {
   background-color: #144c52;
   border: none;
   color: white;
-  border-radius: 20px 20px 20px 20px;
+  border: 1rem white bold;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
-  /* padding: 20px; */
+  padding: 10px 70px; 
   box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  margin-top: 5%;
+}
+
+.pdfButton:first-child,
+.bookmarksdisplayButton,
+.displayButton:last-child {
+  margin-left: 0; 
+}
+
+.pdfButton,
+.bookmarksdisplayButton:last-child,
+.displayButton:last-child {
+  margin-right: 0; 
 }
 
 .pdfButton:hover,
 .bookmarksdisplayButton:hover,
 .displayButton:hover {
   background-color: #144c52;
-  border: none;
   color: white;
-  border-radius: 20px 20px 20px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  /* padding: 10px; */
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5);
 }
-
 .Navbar {
   width: 100%;
   display: flex;

@@ -74,7 +74,7 @@ function Rest1() {
       setShowAlert(true); // Show alert if no user is logged in
       return;
     }
-    if (locationId) {
+    
       const searchRest = {
         location: searchLocation,
         date: searchDate ? searchDate.toISOString() : "",
@@ -106,7 +106,7 @@ function Rest1() {
       } catch (error) {
         console.error("Error saving hotel search data:", error);
       }
-    };
+    
 
     setLoading(true);
     setShowAlert(false);

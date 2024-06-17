@@ -164,21 +164,7 @@ body {
   align-items: center;
 }
 
-.signinbutton{
-  width: 192%; 
-  /* margin-left: 93%; */
-  background: #1e1e1e;
-  border-radius: 8px;
-  border: 1px rgba(91.37, 91.37, 91.37, 0.5) solid;
-  text-align: center;
-  color: #fcfcfc;
-  font-size: 1rem;
-  font-family: Inter;
-  font-weight: 600;
-  line-height: 2rem;
-  word-wrap: break-word;
-  margin-top: 2rem; 
-}
+
 .orlabel {
   text-align: center;
   color: black;
@@ -188,40 +174,9 @@ body {
   line-height: 19px;
   word-wrap: break-word;
   margin-top: 0.8rem;
-  margin-left: 90%;
+  margin-left: 50%;
 }
 
-/* .signinwithgooglesection {
-  display: flex;
-  align-items: center;
-  width: 195%; 
-  background: white;
-  color: #1e1e1e;
-  border-radius: 8px;
-  border: 1px rgba(91.37, 91.37, 91.37, 0.5) solid;
-  text-align: center;
-  font-size: 1rem;
-  font-family: Inter;
-  font-weight: 600;
-  line-height: 2rem;
-  word-wrap: break-word;
-  margin-top: 1rem;
-}
-
-.googleimage {
-  width: 5%;
-  height: 5%;
-  margin-right: 0.5rem; 
-}
-.googlelabel {
-  margin-left: 20%;
-  text-align: center;
-  color: #1a1c1e;
-  font-size: 1rem;
-  font-family: Inter;
-  word-wrap: break-word;
-  position: relative;
-} */
 .signinwithgooglesection {
   display: flex;
   align-items: center;
@@ -252,13 +207,14 @@ body {
   color: #1a1c1e;
   font-size: 1rem;
   font-family: Inter;
+  width: 400px;
 }
 
 
 
 .registerbutton {
   width: 230%;
-  margin-left: -20%;
+
   background:black; /* Adjust the Registration button background color */
   border-radius: 8px;
   border: 1px rgba(91.37, 91.37, 91.37, 0.5) solid;
@@ -270,4 +226,20 @@ body {
   line-height: 2rem;
   word-wrap: break-word;
   margin-top: 1rem; /* Adjust margin as needed */
+}
+
+.signinbutton{
+  width: 192%; 
+  /* margin-left: 93%; */
+  background: #1e1e1e;
+  border-radius: 8px;
+  border: 1px rgba(91.37, 91.37, 91.37, 0.5) solid;
+  text-align: center;
+  color: #fcfcfc;
+  font-size: 1rem;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 2rem;
+  word-wrap: break-word;
+  margin-top: 2rem; 
 }
