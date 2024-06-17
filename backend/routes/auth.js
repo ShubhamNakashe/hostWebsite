@@ -90,7 +90,6 @@ router.post('/Login', async (req, res) => {
         let user= await UserModel.findOne({username});
        
         if(user && user.password === password){
-            user.lastLogin = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' });
             // user.lastIpAddress = req.query.ipAddress;
             await user.save();
 
@@ -113,7 +112,7 @@ router.post('/Logout' ,async(req,res)=>{
     const {username}=req.body;
 
     const user = await User.findOne({username});
-    user.lastLogout=new Date();
+
     await user.save();
     res.json({success:true});
     }catch(error){
